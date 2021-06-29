@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Trasformes {
 
 	public static void main(String[] args) {
-		Scanner read= new Scanner(System.in);
+		Scanner read = new Scanner(System.in);
 		
 		 int transformation = 0;
 		 
@@ -22,9 +22,10 @@ public class Trasformes {
 		 		 convert = (1.8 *valueCelsius)+32;
 		 		 System.out.printf("O valor de  %.2f Celsius é igual a %.2f Fahrenheit",valueCelsius,convert);
 		 		 break;
-
+		 		 
 
 		 }
+		 read.close();
 
 	}
 }
