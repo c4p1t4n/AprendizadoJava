@@ -2,12 +2,12 @@ package desafio_heranca;
 
 public class Carro {
 	double velocidadeMaxima ;
-	double velocidadeAtual = 0.0;
-	double delta = 5;
-	Carro(double velocidadeMaxima){
+	protected double velocidadeAtual = 0.0;
+	protected double delta = 5;
+	protected Carro(double velocidadeMaxima){
 		this.velocidadeMaxima=velocidadeMaxima;
 				}
-	void acelerar(){ 	
+	protected void acelerar(){ 	
 		if (velocidadeAtual+5 > velocidadeMaxima) {
 			velocidadeAtual=velocidadeMaxima;
 		}else {
@@ -16,7 +16,7 @@ public class Carro {
 		System.out.println("A Velocidade atual é: " +velocidadeAtual +"Km/H");
 		
 	}
-	void freiar() {
+	protected void freiar() {
 		
 		if(velocidadeAtual >= delta) {
 		velocidadeAtual-= delta ;

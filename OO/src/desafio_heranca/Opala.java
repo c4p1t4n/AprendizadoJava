@@ -2,19 +2,19 @@ package desafio_heranca;
 
 public class Opala extends Carro {
 	
-	Opala(){
+	public Opala(){
 		this(230);
 	}
-	Opala(double velocidadeMax){
+	public Opala(double velocidadeMax){
 		super(velocidadeMax);
 	}
 	
-	 void acelerar() {
+	public void acelerar() {
 		velocidadeAtual+= 7;
 		super.acelerar();
 		
 	}
-	void freiar() {		
+	public void freiar() {		
 		super.freiar();
 		
 	}

@@ -3,21 +3,23 @@ package desafio_heranca;
 public class Veyron extends Carro{
 	
 	
-	Veyron(){
+	public Veyron(){
 		this(250);
 	}
-	Veyron(double velocidadeMax){
+	public Veyron(double velocidadeMax){
 		super(velocidadeMax);
 	}
 	
 	
 	
 	@Override
+	public
 	 void acelerar() {
 		velocidadeAtual+=15;
 		super.acelerar();
 	}
 	@Override
+	public
 	 void freiar() {		
 		velocidadeAtual-=15;
 		super.acelerar();
